@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  insightregistry:
+    image: ${DOCKER_REGISTRY}insightregistry
+    build:
+      context: .
+      dockerfile: InsightRegistry/Dockerfile
